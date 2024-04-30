@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG color changing</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            background-color: #2c2c38;
+        }
+
+        #center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            
+
+
+        }
+
+        .bgcolor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+
+        button {
+            border: 1px solid orange;
+            border-radius: 20px;
+            width: 90px;
+            padding: 20px 10px;
+            margin: 10px 10px;
+            color: black;
+        }
+
+        [onclick="changeColorRed()"] {
+            background-color: rgb(220,20,60);
+        }
+
+        [onclick="changeColorGreen()"] {
+            background-color: rgb(0,100,0);
+        }
+
+        [onclick="changeColorBlue()"] {
+            background-color: rgb(135,206,250);
+        }
+
+        [onclick="changeColorYellow()"] {
+            background-color: rgb(255,255,0);
+        }
+
+        [onclick="changeColorBlack()"] {
+            background-color: rgb(0,0,0);
+            color: white;
+        }
+
+        [onclick="changeColorWhite()"] {
+            background-color: rgb(255,255,255);
+        }
+
+        [onclick="changeColorSilver()"] {
+            background-color: rgb(192,192,192);
+        }
+
+        [onclick="changeColorOrange()"] {
+            background-color: rgb(255,140,0);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="center">
+        <div class="bgcolor">
+            <button onclick="changeColorRed()">RED</button>
+            <button onclick="changeColorGreen()">GREEN</button>
+            <button onclick="changeColorBlue()">BLUE</button>
+            <button onclick="changeColorYellow()">YELLOW</button>
+            <button onclick="changeColorBlack()">BLACK</button>
+            <button onclick="changeColorWhite()">WHITE</button>
+            <button onclick="changeColorSilver()">SILVER</button>
+            <button onclick="changeColorOrange()">ORANGE</button>
+        </div>
+    </div>
+    <script>
+
+        function changeColorRed() {
+            document.body.style.backgroundColor = "rgb(220,20,60)";
+        }
+
+        function changeColorGreen() {
+            document.body.style.backgroundColor = "rgb(0,100,0)";
+        }
+
+        function changeColorBlue() {
+            document.body.style.backgroundColor = "rgb(135,206,250)";
+        }
+
+        function changeColorYellow() {
+            document.body.style.backgroundColor = "rgb(255,255,0)";
+        }
+
+        function changeColorBlack() {
+            document.body.style.backgroundColor = "rgb(0,0,0)";
+        }
+
+        function changeColorWhite() {
+            document.body.style.backgroundColor = "rgb(255,255,255)";
+        }
+
+        function changeColorSilver() {
+            document.body.style.backgroundColor = "rgb(192,192,192)";
+        }
+
+        function changeColorOrange() {
+            document.body.style.backgroundColor = "	rgb(255,140,0)";
+        }
+
+
+    </script>
+</body>
+</html>
